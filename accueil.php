@@ -10,29 +10,30 @@
     <body>
         <div class="container pt-5">
             <div class=row>
-                <div class="col-sm-8">
+            <script type="text/javascript" src="./entete.html"></script>
+            </div>
+            <div class=row>
+                <div class="col-sm-2"></div>
+
+                <div class="col-sm-5">
                     <div class=row>
-                    
+                        <h3>Dernière acquisitions</h3>
                     </div>
                     <div class=row>
-                        <nav class="navbar justify-content-center" aria-label="Fourth navbar example">         
-                            <div class="collapse navbar-collapse" id="navbars"> 
-                                <form>
-                                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-                                    <button class="btn btn-primary" type="button">Panier</button>
-                                </form>
-                            </div>
-                        </nav>
+
+                    </div>
+                    <div class=row>
+                        (Carrousel)
                     </div>
                 </div>
-                <div class="col-sm-4">
 
+                <div class="col-sm-2"></div>
+            
+                <div class="col-sm-3">
+                <script type="text/javascript" src="./authentification.php"></script>
                 </div>
             </div>
-
-            
         </div>
-        
 
     <?php
     
