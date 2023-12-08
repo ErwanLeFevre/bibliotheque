@@ -13,7 +13,9 @@ session_start();
     <body>
         <div class="container pt-5">
             <div class=row>
-            <script type="text/javascript" src="./entete.html"></script>
+            <?php
+            include 'entete.html'
+            ?>
             </div>
             <div class=row>
                 <div class="col-sm-2"></div>
@@ -33,7 +35,9 @@ session_start();
                 <div class="col-sm-2"></div>
             
                 <div class="col-sm-3">
-                <script type="text/javascript" src="./authentification.php"></script>
+                    <?php
+                include 'authentification.php'
+                ?>
                 </div>
             </div>
         </div>
