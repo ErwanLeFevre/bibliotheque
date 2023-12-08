@@ -20,7 +20,7 @@ session_start();
 
                 <div class="col-sm-5">
                     <div class=row>
-                        <h3>Dernière acquisitions</h3>
+                        <h4>Dernière acquisitions</h4>
                     </div>
                     <div class=row>
 
