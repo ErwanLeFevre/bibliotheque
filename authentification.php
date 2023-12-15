@@ -27,7 +27,7 @@ if (isset($_REQUEST["ok"])){
         $stmt->execute();
         while($enregistrements = $stmt->fetch())
         {
-            echo "<p> $enregistrements->profil</p>";
+            echo "<p> $enregistrements->profil  </p>";
         }
     }catch (Exception $e) {     
         echo $e->getMessage();     
