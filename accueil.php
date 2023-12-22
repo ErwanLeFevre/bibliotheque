@@ -13,38 +13,30 @@ session_start();
     </head>
     <body>
         <div class="container-xl">
-            <div class=row>
-            <?php
-            include 'entete.html'
-            ?>
+            <div class=row.bg-danger>
+                La Bibliothèque de Moulinsart est fermé au public jusqu'à nouvel ordre. Mais il vous est possible de réserver et retirer vos livres via notre service Biblio Drive !
             </div>
             <div class=row>
-                <div class="col-sm-2"></div>
-
-                <div class="col-sm-5">
+                <?php include 'entete.html';?>
+            </div>
+            <div class=row>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-6">
                     <div class=row>
                         <h4>Dernière acquisitions</h4>
-                        <?php include 'detail.php' ?>
                     </div>
                     <div class=row>
-
+                        <?php include 'detail.php';?>
                     </div>
                     <div class=row>
                         (Carrousel)
                     </div>
                 </div>
-
-                <div class="col-sm-2"></div>
-            
-                <div class="col-sm-3">
-                    <?php
-                include 'authentification.php'
-                ?>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-4">
+                    <?php include 'authentification.php';?>   
                 </div>
             </div>
         </div>
-
-    <?php
-    
-    ?>
+    </body>
 </html>   

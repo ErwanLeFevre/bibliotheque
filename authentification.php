@@ -1,10 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="fr">
     <head>
         <title>authentification</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 <body>
 <form method="POST" action="accueil.php">
@@ -16,7 +13,7 @@
 <?php
 if (isset($_REQUEST["ok"])){ 
     try{
-        require_once("connexion.php");
+        require_once("connexion.php");      
         $id = $_REQUEST["id"];
         $_SESSION["id"] = $id;
         $mdp = $_REQUEST["mdp"];

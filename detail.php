@@ -2,10 +2,10 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Accueil</title>
+        <title>Detail</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdn.sdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.css"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
@@ -72,7 +72,7 @@
 
                         if(isset($user_mel->mel) && $user_mel->mel == $_SESSION["email"]){
                             echo '<p>Déjà emprunté.</p>';
-                        } elseif($req->rowCount() == 5){ // Vérifier si la personne n'a pas plus de 5 emprunts
+                        } elseif($req->rowCount() == 5){ 
                             echo '<p>Vous avez 5 emprunts.</p>';
                         } else {
                             if(!$emprute){
@@ -87,7 +87,6 @@
                                 }
                             }
                         }
-
                     } else {
                         if(!$emprute){
                             echo "<p>Connectez vous pour ajouter à votre panier.</p>";
