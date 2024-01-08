@@ -26,10 +26,10 @@ session_start();
                         <h4>Dernière acquisitions</h4>
                     </div>
                     <div class=row>
-                        <?php include 'detail.php';?>
+                        <?php include 'carousel.html';?>
                     </div>
                     <div class=row>
-                        (Carrousel)
+                        <?php include 'detail.php';?>
                     </div>
                 </div>
                 <div class="col-sm-1"></div>
