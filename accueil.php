@@ -35,13 +35,21 @@ session_start();
                 <div class="col-sm-1"></div>
                 <div class="col-sm-4">
                     <?php 
-                    require("authentification.php");
-                    if($_SESSION["adminUser"]) require("admin-header.html");
+                    include("authentification.php");
+                    if($_SESSION["adminUser"])
+                        ?>
+                        <nav class="navbar navbar-expand-sm justify-content-center">
+                            <ul class="admin-links">
+                                <li><a href="ajouter_livre.php">Ajouter un livre</a></li>
+                                <li><a href="ajouter_membre.php">Ajouter un membre</a></li>
+                            </ul>
+                        </nav>
+                        <?php;
                     else require("entete.html");
                     if($_SESSION["adminUser"])  
                         echo '<h1 class="big-title">Version Administrateur.</h1>';
                     else
-                    echo '<h1 class="big-title">Dernier acquisition</h1>';
+                        echo '<h1 class="big-title">Dernier acquisition</h1>';
                     ?>   
                 </div>
             </div>

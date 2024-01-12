@@ -8,7 +8,7 @@
     <body>
     <?php
     try { 
-        $dns = 'mysql:host=localhost;dbname=bibliotheque';   
+        $dns = 'mysql:host=localhost;dbname=bibliodrive';   
         $utilisateur = 'root';      
         $motDePasse = '';    
         $connexion = new PDO( $dns, $utilisateur, $motDePasse );

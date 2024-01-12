@@ -1,7 +1,7 @@
 
 <?php require_once('connexion.php')?>
 
-<div class="authen-container">
+<div class="container">
     <?php
         // Initialisation des variables de sessions.
         if(!isset($_SESSION["connected"])){
