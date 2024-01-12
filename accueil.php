@@ -34,9 +34,18 @@ session_start();
                 </div>
                 <div class="col-sm-1"></div>
                 <div class="col-sm-4">
-                    <?php include 'authentification.php';?>   
+                    <?php 
+                    require("authentification.php");
+                    if($_SESSION["adminUser"]) require("admin-header.html");
+                    else require("entete.html");
+                    if($_SESSION["adminUser"])  
+                        echo '<h1 class="big-title">Version Administrateur.</h1>';
+                    else
+                    echo '<h1 class="big-title">Dernier acquisition</h1>';
+                    ?>   
                 </div>
             </div>
         </div>
     </body>
-</html>   
+</html> 
+
