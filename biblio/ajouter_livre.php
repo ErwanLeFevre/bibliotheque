@@ -45,11 +45,11 @@
             }
             ?>
             <h1>Ajouter un livre</h1>
-            <form method="post"> <!-- Formulaire d'entrée -->
+            <form method="post" action="ajouter_livre.php"> <!-- Formulaire d'entrée -->
                 <label for="auteur">Auteur : </label><!-- Liste déroulante des noms des Auteurs -->
                 <?php
-                    echo "<select name=\"noauteur\" id=\"auteur\" required>";
-                    echo "<option value=\"\" disabled selected>---- Sélectionner ----</option>";
+                    echo '"<select name="noauteur" id="auteur" required>"';
+                    echo '"<option value="hhh" disabled selected>---- Sélectionner ----</option>"';
                     $req = $connexion->query("SELECT noauteur,nom FROM auteur Order By nom ASC");
                     $req->setFetchMode(PDO::FETCH_OBJ);
                     while($auteur = $req->fetch()){

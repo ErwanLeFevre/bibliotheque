@@ -49,7 +49,7 @@
     ?>
         <h1>Ajouter un membre</h1>
 
-        <form method="post"><!-- Formulaire d'entrée -->
+        <form method="post" action="ajouter_membre.php"><!-- Formulaire d'entrée -->
             <div class=row>
             <label for="email">Email : </label>
             <input type="email" name="email" id="email" autocomplete="off" required>

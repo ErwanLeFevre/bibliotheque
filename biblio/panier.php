@@ -17,7 +17,6 @@
                 if(!in_array($_POST["nolivre"], $_SESSION["panier"])){
                     array_push($_SESSION["panier"], $_POST["nolivre"]);
                 }
-                header("Location: panier.php");
             }
         }
     ?>
@@ -40,7 +39,7 @@
                         while($panier_info = $req->fetch()){
                             echo '<div class="panier-info">';
                             echo "<p>".$panier_info->nom." ".$panier_info->prenom." - ".$panier_info->titre." (".$panier_info->anneeparution.")</p>";
-                            echo '<a href="panier_manager?retirer=true&nolivre='.$panier_info->nolivre.'&redirect=panier.php" class="btn btn-primary">Annuler</a>';
+                            echo '<a href="retirer=true&nolivre='.$panier_info->nolivre.'&redirect=panier.php" class="btn btn-primary">Annuler</a>';
                             echo '</div>';
                         }
                     }
