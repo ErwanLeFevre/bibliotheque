@@ -85,8 +85,6 @@
                 if(isset($ajout_membre)) { // Vérification de l'ajout du nouveau membre
                     if ($ajout_membre) 
                         echo '<p class="ajout_succes">Membre ajouté avec succès !</p>';
-                    else
-                        echo '<p class="ajout_erreur">Une erreur est survenue l\'or de l\'ajout du membre : '. $erreur . '</p>';
                 }
             ?>
 

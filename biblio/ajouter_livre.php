@@ -84,8 +84,6 @@
                 if(isset($livre_ajout)) {// Vérification de l'ajout du nouveau membre
                     if ($livre_ajout) 
                         echo '<p>Livre ajouté avec succès !</p>';
-                    else
-                        echo '<p>Une erreur est survenue l\'or de l\'ajout du livre : '. $erreur . '</p>';
                 }
                 ?>
             </from>

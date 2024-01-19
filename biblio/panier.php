@@ -16,9 +16,17 @@
             if(isset($_POST["ajout_panier"])){
                 if(!in_array($_POST["nolivre"], $_SESSION["panier"])){
                     array_push($_SESSION["panier"], $_POST["nolivre"]);
+                    try {                    
+                        $requete2 = "INSERT INTO emprunter(mel,nolivre,dateeemprut,dateretour) VALUES(:email,:nolivre,,)";
+                        echo $requete2;
+                        echo "Panier Validé";
+                      } catch (Exception $e) {
+                        echo "Une erreur est survenue lors de la validation du panier.";
+                      }
                 }
             }
         }
+        
     ?>
     <div class="container-sm ">
         <div class="col-sm-6">
@@ -50,8 +58,6 @@
                 } else {
                     echo "<p>Vous n'avez rien dans votre panier !</p>";
                 }
-            
-
             }
         ?>
         </div>
